@@ -3,7 +3,8 @@ FROM quay.io/redhattraining/httpd-parent
 
 EXPOSE 8080
 
-LABEL io.openshift.expose-services="8080:http" && io.k8s.description="A basic HTTP server"\
+LABEL io.openshift.expose-services="8080:http" \
+      io.k8s.description="A basic HTTP server"\
       io.k8s.display-name"Apache HTTP Server" \
       io.openshift.tags="apache,httpd"
 
