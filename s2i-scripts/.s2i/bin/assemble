@@ -14,10 +14,15 @@ echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
+DATE2=`date "+%Y %m(%b) %d @ %H:%M %p"`
 
 echo "---> Creating info page"
 echo "Page built on $DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+
+echo "---> Creating user page"
+echo "Page build on $DATE2" >> ./user.html
+echo "Serving by Apache HTTP Server Version $HTTPD_VERSION" >> ./user.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
